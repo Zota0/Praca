@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-min {
+    min-height: 0;
+    min-width: 0;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100svh;
+    color: #caf;
+    background-color: black;
+    background: linear-gradient(
+        to bottom,
+        purple,
+        blueviolet,
+        blueviolet,
+        #151515,
+        black
+    );
+}
+
+.error {
+    color: red;
+    background: pink;
+    .message {
+        color: orange;
+        font-family: cursive;
+    }
+}
+
+label, input {
+    display: block;
+}
+
+.form-container input,
+.form-container button {
+    background-clip: padding-box;
+    border-image: linear-gradient(to left, blueviolet, purple) 1;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+    background: black linear-gradient(to bottom right,
+            rgb(50, 50, 50) 20%,
+            rgb(30, 30, 30) 80%);
+}
+
+.form-container input {
+    color: transparent;
+    font-weight: 800;
+    background: linear-gradient(to right,
+            salmon,
+            darkred);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0 transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container input::placeholder {
+    color: transparent;
+    background: linear-gradient(to left,
+            violet,
+            purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 200;
+    -webkit-text-stroke: black;
+}
+
+.form-container label {
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.form-container * {
+    text-align: center;
+    font-size: 24px;
+    line-height: 100%;
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-container button {
+    margin-bottom: 10px;
+    background: #181818;
+    color: red;
+    font-weight: 800;
+    border: none;
+    border: 5px darkred outset;
+    border-radius: 25px;
+}
+
+.form-container button:hover {
+    border-radius: 50px;
+    border: 5px #b80000 outset;
+    background: linear-gradient(to left bottom,
+            red,
+            darkred);
+    color: pink;
+}
+
+.form-container button:active {
+    margin-bottom: 0;
+    border-radius: 50px;
+    border: 10px red outset;
+    background: linear-gradient(to left bottom,
+            red,
+            darkred);
+    color: #fff;
+}
+
+.form-container .form-title {
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    font-size: 48px;
+    line-height: 100%;
+    margin: 0;
+    margin-top: -25px;
+    padding: 0;
+}
+
+.form-container input[type="date"] > * {
+    background: black;
+}
+
+.form-container {
+    margin: auto;
+    margin-top: 100px;
+    max-height: 1200px;
+    border: 8px darkslategray outset;
+    padding: 25px;
+    font-size: 24px;
+    line-height: 150%;
+    overflow: hidden;
+    max-width: 600px;
+    box-shadow:
+        5px 5px 25px 5px black,
+        -5px -5px 25px 5px dimgray;
+    border-radius: 25px;
+    background: #101010;
+}

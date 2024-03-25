@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:4306
+-- Generation Time: Feb 21, 2024 at 06:35 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+START TRANSACTION;
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+SET time_zone = "+00:00";
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+CREATE DATABASE `piabd2`;
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+USE `piabd2`;
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+
+CREATE TABLE `users` (
+  `ID` int(4) NOT NULL,
+  `FIRSTNAME` varchar(80) NOT NULL,
+  `LASTNAME` varchar(100) NOT NULL,
+  `CREATIONDATE` datetime NOT NULL DEFAULT current_timestamp(),
+  `BIRTHDATE` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+-- ! UWAGA TEN SKRYPT DZIAŁA TYLKO DO `MYSQL` nie do samego `SQL`
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
